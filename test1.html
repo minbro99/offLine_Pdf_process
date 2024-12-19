@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오프라인 PDF 추출 프로세스</title>
+  <link rel="stylesheet" href="test1.css">
+</head>
+
+<body>
+  <h1>오프라인 신청서 PDF 추출 가이드</h1>
+  <br>
+  <li type="1" class="li1">PDF에 대한 데이터를 OCR화하여 OCR 작업 진행</li>
+  <ol type="1">
+    <li>목적: PDF에 있는 데이터를 텍스트로 변환합니다.</li>
+    <li>방법:</li>
+    <ol type="A">
+      <li>PDF를 OCR(문자 인식) 작업으로 변환합니다.</li>
+      <li>OCR 소프트웨어나 알PDF의 OCR 기능을 사용하세요.</li>
+    </ol>
+  </ol>
+  <br>
+  <details>
+    <summary class="sum1">OCR 프로세스</summary>
+    <img src="./processPng/OCR1.png" alt="ocr 클릭 관련">
+  </details>
+</br>
+
+  <li type="1" class="li1">PDF 페이지에 베이츠 번호 매기기</li>
+  <ol type="1">
+    <li>목적: PDF 페이지마다 고유 번호를 추가합니다.</li>
+    <li>방법:</li>
+    <ol type="A">
+      <li>알PDF 실행 후 도구 > 일괄편집 > 베이츠 번호를 선택합니다.</li>
+      <li>파일 추가를 클릭하여 작업할 PDF 파일을 선택합니다.</li>
+      <li>템플릿 추가(+) 버튼을 눌러 템플릿 디자인을 설정합니다.</li>
+      <li>설정이 완료되면 베이츠 번호 추가를 확인하고 저장합니다.</li>
+    </ol>
+  </ol>
+  <br>
+  <details>
+    <summary class="sum1">베이츠 번호 매기기 프로세스</summary>
+    <img src="./processPng/numbering2.png" alt="베이츠 번호 매기기 이미지 1">
+  <img src="./processPng/numbering1.png" alt="베이츠 번호 매기기 이미지 2">
+  </details>
+  
+  <br>
+  <li type="1" class="li1">데이터 엑셀 정리하기</li>
+  <ol type="1">
+    <li>목적: 추출된 데이터를 체계적으로 정리합니다.</li>
+    <li>방법:</li>
+    <ol type="A">
+      <li>엑셀 파일을 열고 다음과 같은 열을 만듭니다:</li>
+      <details>
+        <summary class="sumlist1">필수 입력 리스트</summary>
+        <ul type="-">
+          <li>이름</li>
+          <li>동</li>
+          <li>페이지 번호</li>
+          <li>자원명</li>
+        </ul>
+      </details>
+      <li>각 페이지를 필터링하여 자원명을 그룹화합니다.</li>
+    </ol>
+  </ol>
+  <br>
+  <details>
+    <summary class="sum1">엑셀 정리 프로세스스</summary>
+    <img src="./processPng/excel1.png" alt="엑셀 정리 이미지 1">
+  <img src="./processPng/excel2.png" alt="엑셀 정리 이미지 2">
+  </details>
+  
+  <br>
+  <li type="1" class="li1">PDF 페이지 추출 및 정리</li>
+  <ol type="1">
+    <li>목적: 엑셀 데이터를 기반으로 필요한 페이지를 분리합니다.</li>
+    <li>방법:</li>
+    <ol type="A">
+      <li>알PDF에서 구성 > 추출 > 페이지 내보내기(사용자 지정)를 선택합니다.</li>
+      <li>엑셀에 입력한 페이지 번호를 참고하여 각 페이지를 추출합니다.</li>
+    </ol>
+  </ol>
+  <br>
+  <details>
+    <summary class="sum1">페이지 추출 프로세스</summary>
+    <img src="./processPng/paging1.png" alt="페이지 추출 이미지 1">
+  <img src="./processPng/paging2.png" alt="페이지 추출 이미지 2">
+  </details>
+  
+  <br>
+  <h4>● 해당 파일 정리 후 저장한 페이지와 엑셀과 매칭 진행</h4>
+</body>
+
+</html>
